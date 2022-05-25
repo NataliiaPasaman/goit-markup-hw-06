@@ -19,7 +19,7 @@ h1, h2, h3, p {
     margin: 0;
 }
 
-ul {
+ul, input {
     padding: 0;
     margin: 0;
 }
@@ -301,6 +301,108 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
+
+.modal-btn .modal-icon{
+    fill: #000000;
+    transition: fill var(--trans-hover);
+}
+
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+    fill: var(--accent-color);
+}
+
+/* Форма модального вікна - стилі */
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form-title {
+    width: 448px;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: var(--let-spc);
+    color: var(--title-color);
+    margin-bottom: 12px;
+}
+
+.lbl-form {
+    position: relative;
+    color: var(--main-text-color);
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.icon-form {
+    position: absolute;
+    bottom: 21px;
+    left: 12px;
+    fill: var(--title-color);
+}
+
+/* .user-name:focus .icon-form {
+    fill: var(--accent-color);
+} */
+..icon-form:focus {
+    font: var(--accent-color);
+}
+
+.user-name, 
+.user-phone,
+.user-mail {
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.user-coment {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    height: 120px;
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+}
+
+.btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+
+    color: var(--bcg-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 00.06em;
+    text-align: center;
+
+    cursor: pointer;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border-radius: 4px;
+}
+
 /*#endregion*/
 
 /*#region Секція Переваги */
