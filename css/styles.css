@@ -759,6 +759,7 @@ img {
     fill: currentColor;
 }
 
+/*#region Форма підписки  */
 .footer-form {
     margin-left: auto;
 }
@@ -862,6 +863,7 @@ img {
 .btn-subscription:focus {
     transform: scale(1.10);
 }
+/*#endregion*/
 
 /*#endregion*/
 
