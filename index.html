@@ -449,6 +449,7 @@
 
             </div>
         </section>
+
     </main>
 
     <!--Футер-->
@@ -510,19 +511,21 @@
                 </ul>
             </div>
 
-            <div class="ftr-form">
-                <form class="subscription-form">
+            <div class="footer-form">
+                <form class="subscription-form" autocomplete="off">
                     <strong class="subscription-title">Подпишитесь на рассылку</strong>
-                    <label class="subscription-label">
-                        <span class="sub-label">E-mail</span>
-                        <input type="email" name="subscription" class="subscription-field" placeholder=" ">
-                    </label>
-                    <button type="submit" class="btn-subscription">
-                        <span class="subscription-text">Подписаться</span>
-                        <svg class="sub-icon" width="24" height="24">
-                            <use href="./images/icons/sprite.svg#icon-letter"></use>
-                        </svg>
-                    </button>
+                    <div class="ftr-form">
+                        <label class="subscription-label">
+                            <input type="email" name="subscription" class="subscription-field" placeholder=" " required>
+                            <span class="sub-label">E-mail</span>
+                        </label>
+                        <button type="submit" class="btn-subscription">
+                            <span class="subscription-text">Подписаться</span>
+                            <svg class="sub-icon" width="24" height="24">
+                                <use href="./images/icons/sprite.svg#icon-letter"></use>
+                            </svg>
+                        </button>
+                    </div>
 
                 </form>
             </div>
